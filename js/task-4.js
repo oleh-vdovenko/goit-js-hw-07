@@ -10,8 +10,7 @@ formElem.addEventListener("submit", (event) => {
   } else {
     userData.email = formElem.elements.email.value.trim();
     userData.password = formElem.elements.password.value.trim();
+    console.log(userData);
+    formElem.reset();
   }
-  console.log(userData);
-
-  formElem.reset();
 });
